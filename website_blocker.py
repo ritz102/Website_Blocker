@@ -1,7 +1,8 @@
-from datetime import datetime as dt
-import smtplib
-import ssl
-from email.message import EmailMessage
+from datetime import datetime as dt # imports datetime module
+import smtplib # Imports library to provide an interface to sned emails
+import ssl # used to establish secure connections
+from email.message import EmailMessage # module that is used to create email messages using code
+
 host_path = "C:\Windows\System32\drivers\etc\hosts" # location of the hosts file which is used to block websites
 redirect = "127.0.0.1" # Websites that are blocked will be redirected to this IP address (double check in hosts file with localhost )
 website_list = ["www.website1.com", "website1.com"] # List of websites whose IP address will be changed to block them
